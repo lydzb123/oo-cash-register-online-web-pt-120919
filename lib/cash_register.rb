@@ -16,7 +16,7 @@ class CashRegister
       i = 0
       while i < quantity do
         @list << item
-        @cost << price * quantity
+        @cost << price
         i += 1
       end
     end
