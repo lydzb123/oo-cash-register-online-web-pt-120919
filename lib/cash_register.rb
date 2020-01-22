@@ -23,6 +23,8 @@ class CashRegister
   end
 
   def void_last_transaction
+    @total
+    list[-1]
   end
 
   def apply_discount
