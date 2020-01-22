@@ -29,7 +29,8 @@ class CashRegister
       @total = 0
       return @total
     else
-      @list.each do |item|
+      @total -= @list[-1].price
+
       return
     end
   end
@@ -45,7 +46,7 @@ class CashRegister
   end
 
   def items
-    @list[-1].price
+    @list
   end
 
 end
