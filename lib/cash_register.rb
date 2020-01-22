@@ -11,7 +11,6 @@ class CashRegister
     @total += price * quantity
     if quantity == 1
       @list << item
-      @cost<< price
     else
       i = 0
       while i < quantity do
