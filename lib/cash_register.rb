@@ -25,7 +25,7 @@ class CashRegister
   def void_last_transaction
     if @list.count == 0
       @total = 0
-      @total
+      return @total
     else
 
     end
