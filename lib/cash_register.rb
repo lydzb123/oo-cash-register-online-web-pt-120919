@@ -7,11 +7,11 @@ class CashRegister
     @discount = discount.to_f
     @list = []
     @price = []
-
   end
 
   def add_item(item, price, quantity = 1)
     @total += price * quantity
+
     if quantity == 1
       @list << item
       @price << price
@@ -21,7 +21,7 @@ class CashRegister
         @list << item
         @price << (price * quantity)
         i += 1
-      end
+        end
     end
   end
 
