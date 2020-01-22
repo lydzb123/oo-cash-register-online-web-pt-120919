@@ -27,7 +27,7 @@ class CashRegister
       @total = 0
       return @total
     else
-
+      return
     end
   end
 
