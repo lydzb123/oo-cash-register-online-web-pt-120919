@@ -37,6 +37,7 @@ class CashRegister
 
   def items
     @list[-1]
+    
     if @list == []
       @total = 0
     end
