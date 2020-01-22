@@ -6,6 +6,7 @@ class CashRegister
     @total = 0
     @discount = discount.to_f
     @list = []
+    @price = []
 
   end
 
