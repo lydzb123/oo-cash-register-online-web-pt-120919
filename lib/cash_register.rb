@@ -30,7 +30,7 @@ class CashRegister
       @total = 0
       return @total
     else
-      @total -= @list[-1].price
+      @total -= @list.last.price
       return @total
     end
   end
