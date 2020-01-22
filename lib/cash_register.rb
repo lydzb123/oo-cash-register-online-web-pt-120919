@@ -45,7 +45,7 @@ class CashRegister
   end
 
   def items
-    @list
+    @list[-1].price
   end
 
 end
