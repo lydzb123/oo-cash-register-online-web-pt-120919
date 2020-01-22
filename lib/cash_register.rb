@@ -35,7 +35,7 @@ class CashRegister
     end
   end
 
-  def items
+  def void_last_transaction
     if @list == []
       @total = 0
     end
