@@ -1,6 +1,6 @@
 class CashRegister
 
-  attr_accessor :total, :discount, :list
+  attr_accessor :total, :discount, :list, :price
 
   def initialize(discount = 0)
     @total = 0
@@ -13,10 +13,12 @@ class CashRegister
     @total += price * quantity
     if quantity == 1
       @list << item
+      @price <<price
     else
       i = 0
       while i < quantity do
         @list << item
+        @price <<price\
         i += 1
       end
     end
@@ -27,6 +29,7 @@ class CashRegister
       @total = 0
       return @total
     else
+      @list.each do |item|
       return
     end
   end
