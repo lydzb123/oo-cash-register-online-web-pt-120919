@@ -26,6 +26,8 @@ class CashRegister
   end
 
   def void_last_transaction
+    @list.tap(&:pop)
+  
     if @list.count == 0
       @total = 0
       return @total
