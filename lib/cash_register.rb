@@ -1,12 +1,10 @@
 class CashRegister
 
-  attr_accessor :total, :discount, :list, :cost
+  attr_accessor :total, :discount, :list
 
   def initialize(discount = 0)
     @total = 0
     @discount = discount.to_f
-    @list = []
-
   end
 
   def add_item(item, price, quantity = 1)
